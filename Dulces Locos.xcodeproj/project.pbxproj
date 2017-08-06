@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F00A6ED31F36C6AA0066582D /* products in Resources */ = {isa = PBXBuildFile; fileRef = F00A6ED21F36C6AA0066582D /* products */; };
 		F01FDC9E1F367D7A000A4FE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FDC9D1F367D7A000A4FE5 /* AppDelegate.swift */; };
 		F01FDCA31F367D7A000A4FE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01FDCA11F367D7A000A4FE5 /* Main.storyboard */; };
 		F01FDCA51F367D7A000A4FE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01FDCA41F367D7A000A4FE5 /* Assets.xcassets */; };
 		F01FDCA81F367D7A000A4FE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01FDCA61F367D7A000A4FE5 /* LaunchScreen.storyboard */; };
 		F01FDCB41F368016000A4FE5 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FDCB31F368016000A4FE5 /* MyCollectionViewCell.swift */; };
-		F01FDCB61F36804F000A4FE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FDCB51F36804F000A4FE5 /* ViewController.swift */; };
-		F01FDCB81F36938F000A4FE5 /* products in Resources */ = {isa = PBXBuildFile; fileRef = F01FDCB71F36938F000A4FE5 /* products */; };
 		F01FDCBA1F369902000A4FE5 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FDCB91F369902000A4FE5 /* Images.swift */; };
+		F01FDCBD1F36A953000A4FE5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FDCBC1F36A953000A4FE5 /* DetailViewController.swift */; };
+		F01FDCBF1F36AF87000A4FE5 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FDCBE1F36AF87000A4FE5 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F00A6ED21F36C6AA0066582D /* products */ = {isa = PBXFileReference; lastKnownFileType = folder; path = products; sourceTree = "<group>"; };
 		F01FDC9A1F367D7A000A4FE5 /* Dulces Locos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dulces Locos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01FDC9D1F367D7A000A4FE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F01FDCA21F367D7A000A4FE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -25,9 +27,9 @@
 		F01FDCA71F367D7A000A4FE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F01FDCA91F367D7A000A4FE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F01FDCB31F368016000A4FE5 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
-		F01FDCB51F36804F000A4FE5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F01FDCB71F36938F000A4FE5 /* products */ = {isa = PBXFileReference; lastKnownFileType = folder; path = products; sourceTree = "<group>"; };
 		F01FDCB91F369902000A4FE5 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		F01FDCBC1F36A953000A4FE5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F01FDCBE1F36AF87000A4FE5 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +74,9 @@
 			isa = PBXGroup;
 			children = (
 				F01FDC9D1F367D7A000A4FE5 /* AppDelegate.swift */,
+				F01FDCBE1F36AF87000A4FE5 /* CollectionViewController.swift */,
 				F01FDCB31F368016000A4FE5 /* MyCollectionViewCell.swift */,
-				F01FDCB51F36804F000A4FE5 /* ViewController.swift */,
+				F01FDCBC1F36A953000A4FE5 /* DetailViewController.swift */,
 				F01FDCB91F369902000A4FE5 /* Images.swift */,
 			);
 			name = Controlles;
@@ -92,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				F01FDCA41F367D7A000A4FE5 /* Assets.xcassets */,
-				F01FDCB71F36938F000A4FE5 /* products */,
+				F00A6ED21F36C6AA0066582D /* products */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -165,7 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F01FDCB81F36938F000A4FE5 /* products in Resources */,
+				F00A6ED31F36C6AA0066582D /* products in Resources */,
 				F01FDCA81F367D7A000A4FE5 /* LaunchScreen.storyboard in Resources */,
 				F01FDCA51F367D7A000A4FE5 /* Assets.xcassets in Resources */,
 				F01FDCA31F367D7A000A4FE5 /* Main.storyboard in Resources */,
@@ -179,8 +182,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F01FDCB61F36804F000A4FE5 /* ViewController.swift in Sources */,
+				F01FDCBF1F36AF87000A4FE5 /* CollectionViewController.swift in Sources */,
 				F01FDCBA1F369902000A4FE5 /* Images.swift in Sources */,
+				F01FDCBD1F36A953000A4FE5 /* DetailViewController.swift in Sources */,
 				F01FDCB41F368016000A4FE5 /* MyCollectionViewCell.swift in Sources */,
 				F01FDC9E1F367D7A000A4FE5 /* AppDelegate.swift in Sources */,
 			);
@@ -348,6 +352,7 @@
 				F01FDCAE1F367D7A000A4FE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

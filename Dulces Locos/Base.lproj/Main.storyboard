@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OtP-oQ-Ku0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Q6U-BY-nEP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,92 +10,79 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection View-->
-        <scene sceneID="pul-hm-fn0">
-            <objects>
-                <viewController id="bFJ-bt-u5P" customClass="ViewController" customModule="Dulces_Locos" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="P5i-R4-Fjn"/>
-                        <viewControllerLayoutGuide type="bottom" id="id6-dX-avj"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="KBL-Ta-dW9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ve5-W5-bh3">
-                                <rect key="frame" x="16" y="64" width="343" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3jN-9A-Ybk">
-                                    <size key="itemSize" width="90" height="90"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="aoP-ku-nUg" userLabel="cell" customClass="MyCollectionViewCell" customModule="Dulces_Locos" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ez0-pM-B5q">
-                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
-                                                </imageView>
-                                            </subviews>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="Ez0-pM-B5q" firstAttribute="leading" secondItem="aoP-ku-nUg" secondAttribute="leading" id="ByI-8e-Qbk"/>
-                                            <constraint firstAttribute="trailing" secondItem="Ez0-pM-B5q" secondAttribute="trailing" id="I9L-rj-b1o"/>
-                                            <constraint firstItem="Ez0-pM-B5q" firstAttribute="top" secondItem="aoP-ku-nUg" secondAttribute="top" id="QoO-zI-j3X"/>
-                                            <constraint firstAttribute="bottom" secondItem="Ez0-pM-B5q" secondAttribute="bottom" id="Wkd-TN-IE1"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="foto" destination="Ez0-pM-B5q" id="Ulo-yk-2XH"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ve5-W5-bh3" firstAttribute="top" secondItem="P5i-R4-Fjn" secondAttribute="bottom" id="DFh-aO-8oW"/>
-                            <constraint firstItem="id6-dX-avj" firstAttribute="top" secondItem="ve5-W5-bh3" secondAttribute="bottom" id="hjM-uJ-nsr"/>
-                            <constraint firstItem="ve5-W5-bh3" firstAttribute="trailing" secondItem="KBL-Ta-dW9" secondAttribute="trailingMargin" id="zba-jW-xEV"/>
-                            <constraint firstItem="ve5-W5-bh3" firstAttribute="leading" secondItem="KBL-Ta-dW9" secondAttribute="leadingMargin" id="zx0-du-d1V"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Collection View" id="3YX-pE-rAQ"/>
-                    <connections>
-                        <outlet property="MyCollectionView" destination="ve5-W5-bh3" id="KVo-aX-B25"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8BJ-4i-Sw0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1255.2" y="10.344827586206897"/>
-        </scene>
         <!--Navigation Controller-->
-        <scene sceneID="j8o-gm-oSG">
+        <scene sceneID="Zwr-k1-rEx">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OtP-oQ-Ku0" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6sd-ch-cm0">
+                <navigationController id="Q6U-BY-nEP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZGZ-RT-Rdp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="bFJ-bt-u5P" kind="relationship" relationship="rootViewController" id="EQq-37-RRl"/>
+                        <segue destination="IdE-da-Tw1" kind="relationship" relationship="rootViewController" id="vHb-Xb-Mg0"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eP9-D7-BB7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B7z-ha-dhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="316" y="10.344827586206897"/>
+            <point key="canvasLocation" x="574" y="681"/>
         </scene>
-        <!--View Controller-->
+        <!--Yoyos-->
+        <scene sceneID="8aE-iy-OAh">
+            <objects>
+                <collectionViewController id="IdE-da-Tw1" customClass="CollectionViewController" customModule="Dulces_Locos" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="pWL-Co-Lfi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ubs-kt-Ivs">
+                            <size key="itemSize" width="120" height="120"/>
+                            <size key="headerReferenceSize" width="1" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="30" minY="20" maxX="30" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="EMV-Op-3ts" customClass="MyCollectionViewCell" customModule="Dulces_Locos" customModuleProvider="target">
+                                <rect key="frame" x="30" y="20" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d1 azul.png" translatesAutoresizingMaskIntoConstraints="NO" id="HjL-FC-SXC">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="HjL-FC-SXC" secondAttribute="bottom" id="TKd-HO-P6V"/>
+                                    <constraint firstItem="HjL-FC-SXC" firstAttribute="top" secondItem="EMV-Op-3ts" secondAttribute="top" id="Xbd-oT-4iS"/>
+                                    <constraint firstAttribute="trailing" secondItem="HjL-FC-SXC" secondAttribute="trailing" id="adt-nX-Vz6"/>
+                                    <constraint firstItem="HjL-FC-SXC" firstAttribute="leading" secondItem="EMV-Op-3ts" secondAttribute="leading" id="d6I-ll-7NW"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="foto" destination="HjL-FC-SXC" id="Wza-5k-xco"/>
+                                    <segue destination="mDV-Rv-cSs" kind="push" id="t9E-1C-1Et"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionReusableView" id="75O-3d-KHL">
+                            <autoresizingMask key="autoresizingMask"/>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="IdE-da-Tw1" id="Awi-z7-iVv"/>
+                            <outlet property="delegate" destination="IdE-da-Tw1" id="6rf-Qd-9ok"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Yoyos" id="YxB-Ow-ba9"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xFf-ar-JMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="681"/>
+        </scene>
+        <!--Detail View Controller-->
         <scene sceneID="u74-xq-J1x">
             <objects>
-                <viewController id="mDV-Rv-cSs" sceneMemberID="viewController">
+                <viewController id="mDV-Rv-cSs" customClass="DetailViewController" customModule="Dulces_Locos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="POP-cp-9ke"/>
                         <viewControllerLayoutGuide type="bottom" id="bl2-er-bkc"/>
@@ -103,12 +90,40 @@
                     <view key="view" contentMode="scaleToFill" id="lQZ-YI-8mu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8B-KU-xQ4">
+                                <rect key="frame" x="16" y="72" width="343" height="32"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NsS-Vo-ApZ">
+                                <rect key="frame" x="16" y="112" width="343" height="535"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NsS-Vo-ApZ" firstAttribute="leading" secondItem="lQZ-YI-8mu" secondAttribute="leadingMargin" id="G42-OE-pjA"/>
+                            <constraint firstItem="NsS-Vo-ApZ" firstAttribute="top" secondItem="h8B-KU-xQ4" secondAttribute="bottom" constant="8" id="OJb-oO-b08"/>
+                            <constraint firstItem="h8B-KU-xQ4" firstAttribute="leading" secondItem="lQZ-YI-8mu" secondAttribute="leadingMargin" id="Qxu-nE-bGK"/>
+                            <constraint firstItem="NsS-Vo-ApZ" firstAttribute="trailing" secondItem="lQZ-YI-8mu" secondAttribute="trailingMargin" id="a03-ni-xHR"/>
+                            <constraint firstItem="bl2-er-bkc" firstAttribute="top" secondItem="NsS-Vo-ApZ" secondAttribute="bottom" constant="20" id="bW1-i5-A3J"/>
+                            <constraint firstItem="h8B-KU-xQ4" firstAttribute="trailing" secondItem="lQZ-YI-8mu" secondAttribute="trailingMargin" id="c6m-41-Pd6"/>
+                            <constraint firstItem="h8B-KU-xQ4" firstAttribute="top" secondItem="POP-cp-9ke" secondAttribute="bottom" constant="8" id="d1X-8b-Kxs"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="iu3-Jn-Zjk"/>
+                    <connections>
+                        <outlet property="foto" destination="NsS-Vo-ApZ" id="fPS-3t-yMf"/>
+                        <outlet property="nombreLabel" destination="h8B-KU-xQ4" id="dGV-9e-e67"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVF-Te-73O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="730" y="746"/>
+            <point key="canvasLocation" x="2161" y="681"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="d1 azul.png" width="2894" height="2760"/>
+    </resources>
 </document>
