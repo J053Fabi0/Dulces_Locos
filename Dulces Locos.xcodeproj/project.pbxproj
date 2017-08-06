@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		F01FDC9E1F367D7A000A4FE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FDC9D1F367D7A000A4FE5 /* AppDelegate.swift */; };
-		F01FDCA01F367D7A000A4FE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FDC9F1F367D7A000A4FE5 /* ViewController.swift */; };
 		F01FDCA31F367D7A000A4FE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01FDCA11F367D7A000A4FE5 /* Main.storyboard */; };
 		F01FDCA51F367D7A000A4FE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01FDCA41F367D7A000A4FE5 /* Assets.xcassets */; };
 		F01FDCA81F367D7A000A4FE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01FDCA61F367D7A000A4FE5 /* LaunchScreen.storyboard */; };
+		F01FDCB41F368016000A4FE5 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FDCB31F368016000A4FE5 /* MyCollectionViewCell.swift */; };
+		F01FDCB61F36804F000A4FE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FDCB51F36804F000A4FE5 /* ViewController.swift */; };
+		F01FDCB81F36938F000A4FE5 /* products in Resources */ = {isa = PBXBuildFile; fileRef = F01FDCB71F36938F000A4FE5 /* products */; };
+		F01FDCBA1F369902000A4FE5 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FDCB91F369902000A4FE5 /* Images.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F01FDC9A1F367D7A000A4FE5 /* Dulces Locos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dulces Locos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01FDC9D1F367D7A000A4FE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F01FDC9F1F367D7A000A4FE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F01FDCA21F367D7A000A4FE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F01FDCA41F367D7A000A4FE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F01FDCA71F367D7A000A4FE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F01FDCA91F367D7A000A4FE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F01FDCB31F368016000A4FE5 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		F01FDCB51F36804F000A4FE5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F01FDCB71F36938F000A4FE5 /* products */ = {isa = PBXFileReference; lastKnownFileType = folder; path = products; sourceTree = "<group>"; };
+		F01FDCB91F369902000A4FE5 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		F01FDC9C1F367D7A000A4FE5 /* Dulces Locos */ = {
 			isa = PBXGroup;
 			children = (
-				F01FDC9D1F367D7A000A4FE5 /* AppDelegate.swift */,
-				F01FDC9F1F367D7A000A4FE5 /* ViewController.swift */,
-				F01FDCA11F367D7A000A4FE5 /* Main.storyboard */,
-				F01FDCA41F367D7A000A4FE5 /* Assets.xcassets */,
-				F01FDCA61F367D7A000A4FE5 /* LaunchScreen.storyboard */,
-				F01FDCA91F367D7A000A4FE5 /* Info.plist */,
+				F01FDCAF1F367DDA000A4FE5 /* Controlles */,
+				F01FDCB01F367DE6000A4FE5 /* View */,
+				F01FDCB11F367DEF000A4FE5 /* Assets */,
+				F01FDCB21F367DF8000A4FE5 /* Support Files */,
 			);
 			path = "Dulces Locos";
+			sourceTree = "<group>";
+		};
+		F01FDCAF1F367DDA000A4FE5 /* Controlles */ = {
+			isa = PBXGroup;
+			children = (
+				F01FDC9D1F367D7A000A4FE5 /* AppDelegate.swift */,
+				F01FDCB31F368016000A4FE5 /* MyCollectionViewCell.swift */,
+				F01FDCB51F36804F000A4FE5 /* ViewController.swift */,
+				F01FDCB91F369902000A4FE5 /* Images.swift */,
+			);
+			name = Controlles;
+			sourceTree = "<group>";
+		};
+		F01FDCB01F367DE6000A4FE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F01FDCA11F367D7A000A4FE5 /* Main.storyboard */,
+				F01FDCA61F367D7A000A4FE5 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F01FDCB11F367DEF000A4FE5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F01FDCA41F367D7A000A4FE5 /* Assets.xcassets */,
+				F01FDCB71F36938F000A4FE5 /* products */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		F01FDCB21F367DF8000A4FE5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F01FDCA91F367D7A000A4FE5 /* Info.plist */,
+			);
+			name = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F01FDCB81F36938F000A4FE5 /* products in Resources */,
 				F01FDCA81F367D7A000A4FE5 /* LaunchScreen.storyboard in Resources */,
 				F01FDCA51F367D7A000A4FE5 /* Assets.xcassets in Resources */,
 				F01FDCA31F367D7A000A4FE5 /* Main.storyboard in Resources */,
@@ -137,7 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F01FDCA01F367D7A000A4FE5 /* ViewController.swift in Sources */,
+				F01FDCB61F36804F000A4FE5 /* ViewController.swift in Sources */,
+				F01FDCBA1F369902000A4FE5 /* Images.swift in Sources */,
+				F01FDCB41F368016000A4FE5 /* MyCollectionViewCell.swift in Sources */,
 				F01FDC9E1F367D7A000A4FE5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
